@@ -1,0 +1,14 @@
+.ProfilePic {
+  justify-content: center;
+
+  display: flex;
+  
+}
+.ProfilePic > img {
+  height: 100px;
+  padding-top: 10px;
+  width: 100px;
+  padding-top: 10px;
+  justify-content: center;
+  border-radius: 170px;
+}

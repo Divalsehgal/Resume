@@ -1,0 +1,51 @@
+.Section {
+  width: "100%";
+  justify-content: center;
+  display: flex;
+
+  height: 100%;
+  flex-direction: column;
+}
+
+.Section > h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+  transform: transform 50ms ease-out;
+}
+.Section > h3:hover {
+  transform: scale(1.4);
+}
+
+.Section__Data {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  height: 100%;
+  overflow-x: visible;
+  overflow: auto;
+}
+
+.Section__Data > p {
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+}
+
+.Section__Item > p {
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+}
+
+.loading {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  margin: 45px;
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+}

@@ -1,11 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import Footer from "./Footer/Footer";
-import Header from "./Header/Header";
 import "./Projects.css";
 import "./App.css";
 import ProjectSection from "./ProjectSection";
 function Projects() {
-  const [isSticky, setSticky] = useState(false);
+  // eslint-disable-next-line
+  const [_, setSticky] = useState(false);
   const ref = useRef(null);
   const handleScroll = () => {
     if (ref.current) {

@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import Footer from "./Footer/Footer";
-import Header from "./Header/Header";
+import React from "react";
+
 
 import "./App.css";
 import Section from "./Section";

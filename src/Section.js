@@ -11,7 +11,7 @@ const SingleSection = (props) => {
     <div className="Section">
       <h3> {title}</h3>
       <div className="Section__Data">
-        {List.map((edu) => {
+        {List?.map((edu) => {
           return (
             <ul key={edu.id}>
               <li>
@@ -36,9 +36,8 @@ const SingleSection = (props) => {
                       {edu.line2}
                     </p>
                   ) : (
-                    <p>
-                      <a
-                      href
+                    <p
+              
                        onClick={ () => {openInNewTab(`${edu.link}`)}}
                         style={{
                           textDecoration: "none",
@@ -49,7 +48,6 @@ const SingleSection = (props) => {
                         }}
                       >
                         {"Open link"}
-                      </a>
                     </p>
                   )}
                 </div>
@@ -69,7 +67,6 @@ function Section(props) {
     );
     const resData = await response.json();
     setSectionList(resData);
-    console.log(resData);
   }, []);
 
   useEffect(() => {
@@ -107,6 +104,9 @@ function Section(props) {
          </div>
         ) : (
           sectionList.map((section) => {
+            if (!section){
+              return "";
+            }
             return (
               <SingleSection
                 key={section.id}

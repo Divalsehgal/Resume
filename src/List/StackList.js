@@ -1,5 +1,5 @@
 import reactIcon from "../assets/reactIcon.png";
-import jsIcon from "../assets/jsIcon.png";
+import jsIcon from "../assets/JSIcon.png";
 import nodeIcon from "../assets/NodeIcon.png";
 
 const STACK_LIST = [

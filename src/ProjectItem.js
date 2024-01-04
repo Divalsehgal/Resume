@@ -30,7 +30,7 @@ function ProjectItem(props) {
               {description}
             </p>
             <a
-              href
+              href="true"
               onClick={() => {
                 openInNewTab(`${link}`);
               }}
